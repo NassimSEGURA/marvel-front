@@ -4,7 +4,6 @@ import Navbar from "../components/Navbar";
 import ReactPaginate from "react-paginate";
 import SearchBar from "../components/SearchBar";
 import ComicCard from "../components/ComicCard";
-import Footer from "../components/Footer";
 
 const Comics = () => {
   const [comics, setComics] = useState([]);
@@ -69,7 +68,6 @@ const Comics = () => {
           activeClassName="active"
         />
       </div>
-      <Footer />
     </>
   );
 };

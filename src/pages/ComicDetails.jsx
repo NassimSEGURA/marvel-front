@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Navbar from "../components/Navbar";
 import { useParams } from "react-router-dom";
+import ComicCard from "../components/ComicCard";
 
 const ComicDetails = () => {
   const { comicId } = useParams();
@@ -36,16 +37,10 @@ const ComicDetails = () => {
           <p>Chargement en cours...</p>
         ) : comic ? (
           <>
-            <h2>{comic.title}</h2>
-            <img
-              src={`${comic.thumbnail.path}.${comic.thumbnail.extension}`}
-              alt={comic.title}
-            />
-            <p>
-              Description:{" "}
-              {comic.description || "Pas de description disponible."}
-            </p>
-            {/* Ajoutez d'autres détails du comic selon votre besoin */}
+            <div className="comic-details-card-wrapper">
+              <ComicCard comic={comic} />
+              <p className="comic-details-description">{comic.description}</p>
+            </div>
           </>
         ) : (
           <p>Comic introuvable.</p>

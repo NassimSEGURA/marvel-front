@@ -48,7 +48,6 @@ const CharacterDetailsPage = () => {
     fetchCharacterDetails();
   }, [characterId]);
 
-  console.log(characterDetails);
   return (
     <div>
       {loading ? (

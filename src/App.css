@@ -447,16 +447,15 @@ a {
 }
 .character-name-container {
   position: relative;
-  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 10px;
-  background: linear-gradient(to bottom right, #e62429 66%, transparent 50%)
-    right;
-  background-size: 100% 100%;
-  padding: 10px;
+  background-color: #e62429;
+  padding: 20px;
 }
 .character-name {
   text-align: center;
-  margin-bottom: 40px;
   font-size: 30px;
   font-weight: bold;
   color: white;
@@ -464,15 +463,17 @@ a {
 
 .character-info {
   display: flex;
-
   align-items: flex-start;
+  margin-top: 50px;
+  height: 425px;
+  width: 1200px;
 }
 
 .character-image {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  width: 500px;
-  height: auto;
+  width: 400px;
+  height: 100%;
 }
 .character-image img {
   border-radius: 10px;
@@ -501,9 +502,8 @@ a {
 .character-comic-item {
   margin-bottom: 10px;
 }
-
 .comics-list {
-  margin-top: 50px;
+  height: 100%;
 }
 .comics-list h2 {
   margin-bottom: 10px;
@@ -511,10 +511,14 @@ a {
 }
 .comics-list ul {
   list-style-type: none;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 300px;
+  gap: 10px;
 }
 .comics-list li {
-  margin-bottom: 10px;
+  margin-right: 10px;
 }
 .comics-list li a:hover {
   color: #e62429;
@@ -523,9 +527,11 @@ a {
 
 .right-character-details-card-wrapper {
   width: 600px;
-  height: auto;
-  padding: 20px 0;
+  height: 100%;
   margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 .character-description {
   text-align: justify;
@@ -585,7 +591,9 @@ a {
 .search-button:hover .search-icon path {
   fill: #e62429;
 }
-/* Page Favoris */
+/* Page Favoris
+------------------------------------------------------------------------------------------------
+*/
 .favorisBody {
   margin-top: 75px;
   display: flex;
@@ -627,7 +635,9 @@ a {
   font-size: 25px;
   font-weight: bold;
 }
-/* Footer component */
+/* Footer component 
+------------------------------------------------------------------------------------
+*/
 .footer {
   display: flex;
   justify-content: center;
@@ -638,4 +648,26 @@ a {
   color: white;
   font-size: 20px;
   font-weight: bold;
+}
+/* Comic details
+------------------------------------------------------------------------------------
+*/
+.comic-details {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.comic-details-card-wrapper {
+  width: 560px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.comic-details-card-wrapper .comic-details-description {
+  text-align: justify;
+  line-height: 1.25;
+  font-size: 1.25rem;
 }

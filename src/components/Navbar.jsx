@@ -11,7 +11,8 @@ const Navbar = () => {
   const isComicsPage = pageClass === "comics";
   const isCharactersPage = pageClass === "characters";
   const isFavorisPage = pageClass === "favoris";
-
+  const isComicPage = pageClass === "comic";
+  const isCharacterPage = pageClass === "character";
   return (
     <div className={`hero hero-${pageClass}`}>
       <nav className={`navbar`}>
@@ -75,6 +76,24 @@ const Navbar = () => {
       {isFavorisPage && (
         <div className="navbar-hero-title">
           <h1>Marvel Favoris</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur,
+            debitis?
+          </p>
+        </div>
+      )}
+      {isComicPage && (
+        <div className="navbar-hero-title">
+          <h1>Marvel Comic</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur,
+            debitis?
+          </p>
+        </div>
+      )}
+      {isCharacterPage && (
+        <div className="navbar-hero-title">
+          <h1>Marvel Character</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur,
             debitis?

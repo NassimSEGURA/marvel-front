@@ -13,7 +13,6 @@ const SearchBar = ({ onSearch }) => {
 
   const handleKeyPress = (e) => {
     if (e.key === "Enter") {
-      // Si l'utilisateur appuie sur la touche "Enter", effectuer la recherche
       onSearch(searchQuery);
     }
   };

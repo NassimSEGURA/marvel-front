@@ -63,7 +63,7 @@ const CharactersPage = () => {
           breakLabel="..."
           pageCount={totalPages}
           marginPagesDisplayed={1}
-          pageRangeDisplayed={5} // Limitez le nombre de numéros de page affichés ici
+          pageRangeDisplayed={5}
           onPageChange={(selectedPage) => {
             setCurrentPage(selectedPage.selected + 1);
           }}
